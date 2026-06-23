@@ -1,69 +1,78 @@
-## Automation_task_from_Vrit_Technology
-Cypress Signup Automation
+# Cypress Signup Automation — Vrit Technologies QA Task
 
-This project automates the user signup process using Cypress.
+This project automates the complete user signup process on [Authorized Partner](https://authorized-partner.vercel.app/) using Cypress.
 
-** Prerequisites**
+## Prerequisites
 
 Install the following before running the project:
 
-* Node.js (v18 or later recommended)
-* npm
-* Cypress
-* Mailosaur Account and API Key
+- [Node.js](https://nodejs.org/) v18 or later
+- npm (comes with Node.js)
+- Mailosaur Account and API Key — [Sign up here](https://mailosaur.com/)
 
-**## Dependencies**
+## Dependencies
 
-The project uses the following packages:
-Key packages:
+Package (Purpose)
+ Cypress (Automation framework)
+cypress-xpath (XPath selector support)
+ mailosaur (OTP email retrieval)
+cypress-mochawesome-reporter  (Test reporting)
 
-* Cypress
-* xpath
-* Mailosaur
-* Mochawesome
+Install all dependencies by running
+npm install
 
-***Environment Setup***
+## Environment Setup
 
-Create a '.env' file in the project root and add:
-MAILOSAUR_API_KEY=your_api_key
-MAILOSAUR_SERVER_ID=your_server_id
+Create a '.env' file in the project root and add the following:
+MAILOSAUR_API_KEY=your_api_key_here
+MAILOSAUR_SERVER_ID=your_server_id_here
 
 ## How to Run the Script
-Headed Mode:
+
+**Headed Mode (opens browser):**
 npx cypress open
-Headless Mode:
+
+**Headless Mode (runs in terminal):**
 npx cypress run
 
+## Framework Details
 
-**## Framework Details**
-* Language: JavaScript
-* Automation Framework: Cypress
-* OTP Service: Mailosaur
-* Selector Strategy: CSS Selectors and XPath
-* Node.js Version: v18+
-* Package Manager: npm
+Item | Details 
+Language | JavaScript 
+Automation Framework | Cypress 
+OTP Service | Mailosaur 
+Selector Strategy | CSS Selectors and XPath 
+Node.js Version | v18+ 
+Package Manager | npm 
 
+## Test Data
 
-**## Test Data**
-The test uses dynamically generated data:
-* Username
-* Email Address
-* Phone Number
+The test uses dynamically generated data on each run:
+- Username
+- Email Address
+- Phone Number
 
-OTP verification is performed using Mailosaur email services.
+OTP verification is handled automatically using Mailosaur email services.
 
 ## Files Included
-* signup_automation_script.cy.js
-* README.md
-* report.pdf
-* demo_video.mp4
+
+File | Description 
+ Signup_automation_script.cy.js| Main automation test script 
+README.md | Project documentation 
+ Report.pdf | Test execution report
+Demo_video.mp4| Demo video of automation run 
 
 ## Execution Flow
-1. Open the website and navigate to Login -> Sign Up
-2. Accept the Terms of Service and Privacy Policy checkbox and click Continue
-3. Fill in personal details and click Next (this triggers OTP generation for email verification)
+
+1. Open the website and navigate to Login → Sign Up
+2. Accept the Terms of Service and Privacy Policy checkbox and click "Continue"
+3. Fill in personal details and click "Next" — this triggers OTP generation for email verification
 4. Retrieve OTP from Mailosaur inbox, enter it, and verify
-5. You will be redirected to the Agency Details page —> fill in the required details and click Next
-6. You will be redirected to the Professional Experience page —> fill in the details and click Next
-7. You will be redirected to the Verification and Preferences page —> fill in details, upload required documents, and click Submit
-8. After successful submission, you will be redirected to the profile page
+5. Redirected to Agency Details page — fill in required details and click "Next"
+6. Redirected to Professional Experience page — fill in details and click "Next"
+7. Redirected to Verification and Preferences page — fill in details, upload required documents, and click "Submit"
+8. After successful submission, redirected to the profile page
+
+## Author
+
+Saina Karki — QA Intern Task Round Submission
