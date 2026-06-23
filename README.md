@@ -38,6 +38,7 @@ npx cypress run
 ## Framework Details
 
 Item | Details,
+
 Language | JavaScript,
 Automation Framework | Cypress,
 OTP Service | Mailosaur,
@@ -60,7 +61,7 @@ File | Description
  Signup_automation_script.cy.js| Main automation test script 
 README.md | Project documentation 
  Report.pdf | Test execution report
-Demo_video.mp4| Demo video of automation run 
+Demo_video.mp4([video link]([url](https://drive.google.com/file/d/1V_s1v3Q1c2UHN99XVsg-OzSjfvQXjbl0/view?usp=sharing)))| Demo video of automation run 
 
 ## Execution Flow
 
