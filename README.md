@@ -1,4 +1,4 @@
-**Automation_task_from_Vrit_Technology**
+## Automation_task_from_Vrit_Technology
 Cypress Signup Automation
 
 This project automates the user signup process using Cypress.
